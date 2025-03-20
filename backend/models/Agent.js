@@ -6,6 +6,7 @@ const agentSchema = mongoose.Schema(
     email: { type: String, required: true, unique: true },
     mobile: { type: String, required: true },
     password: { type: String, required: true },
+    role: { type: String, required: true, default: "agent" },
     tasks: [{ type: mongoose.Schema.Types.ObjectId, ref: "List" }],
   },
   { timestamps: true }
