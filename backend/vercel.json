@@ -11,9 +11,5 @@
       "src": "/(.*)",
       "dest": "index.js"
     }
-  ],
-  "env": {
-    "PORT": "1000",
-    "MONGO_URI": "@mongo_uri"
-  }
+  ]
 }
