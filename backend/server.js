@@ -22,6 +22,9 @@ app.use(
 
 app.use("/uploads", express.static("uploads"));
 
+app.get("/", (req, res) => {
+  res.send("API is running...");
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/agents", agentRoutes);
 app.use("/api/lists", listRoutes);
